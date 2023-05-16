@@ -1,0 +1,82 @@
+*{
+    color:#000000;
+}
+
+.inactive{
+    display: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.estilo{
+    color: #ffff;
+}
+.main-container{
+display: flex;
+height: 100vh;
+width: 100vw;
+justify-content: center;
+align-items: center;
+}
+
+.seg-social{
+    display: flex;
+    flex-direction: column;
+ background-color: rgb(0, 2, 145);
+ border-radius: 5px;
+ box-shadow: -1px 1px 10px 5px rgb(0, 0, 0, 0.3);
+ height: 380px;
+ width: 340px;
+}
+.seg-social h1{
+    margin: 20px;
+    text-align: center;
+}
+.seg-social label{
+    margin-bottom: 0px;
+    margin-left: 25px;
+   
+}
+
+#ingreso{
+margin: 20px;
+margin-top: 5px;
+}
+
+.btn_again{
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #e99c0c ;
+    height: 40px;
+}
+
+.btn_SegSocial {
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #e99c0c ;
+    height: 40px;
+}
+
+.caja-result{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 340px;
+    background-color: beige;
+    position: relative;
+    bottom: -50px;
+
+}
+
+#resultado {
+    color:#000000;
+    font-size: 17px;
+}
