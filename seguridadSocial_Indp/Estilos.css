@@ -1,82 +1,324 @@
+:root{
+    --color-principal:#260729;
+    --color-btn: #CCBD9E;
+    --color-fondo: #ffff;
+    --color-fondo-vacio: #E9E9E9;
+    --font-size: 16px;
+
+}
+
 *{
-    color:#000000;
+  padding: 0;
+  margin: 0;
 }
 
 .inactive{
     display: none;
 }
+
 body{
-    margin: 0;
-    padding: 0;
-    background-color: rgb(231, 231, 231);
+    background-color: var(--color-fondo-vacio);
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
 }
-.estilo{
-    color: #ffff;
-}
+
+/*CALCULADORA SS*/
 .main-container{
 display: flex;
+flex-direction: column;
 height: 100vh;
 width: 100vw;
-justify-content: center;
 align-items: center;
+}
+
+.cabecera {
+    background-color: rgb(38, 7, 41, 0.6 );
+    height: 169px;
+    width: 380px;
+    border-radius: 20px 20px 0 0;
+    z-index: 1;
+    position: relative;
+    color: #ffff;
+
+}
+.cabecera h1{
+    font-size: 25px;
+    position: relative;
+    top: 80px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+#retroceder-icono{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 5%;
+    top: 25px;
+
 }
 
 .seg-social{
     display: flex;
     flex-direction: column;
- background-color: rgb(0, 2, 145);
- border-radius: 5px;
- box-shadow: -1px 1px 10px 5px rgb(0, 0, 0, 0.3);
- height: 380px;
- width: 340px;
+    background-color: var(--color-fondo);
+    border-radius: 20px;
+    height: 615px;
+    width: 380px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    justify-content: center;
 }
+
+.caja-contenido{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.caja-contenido h2{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.menu {
+    background-color: #ffff;
+    height: 60px;
+    width: 90%;
+    position: absolute;
+    top: 88%;
+    border-radius: 0 0 20px 20px;
+}
+.fondo-vacio{
+    background: var(--color-fondo-vacio);
+    height: 700px;
+    width: 380px;
+    border-radius: 20px;
+}
+
+
 .seg-social h1{
     margin: 20px;
     text-align: center;
 }
 .seg-social label{
-    margin-bottom: 0px;
-    margin-left: 25px;
+    margin-left: 10px;
+    font-size: 19px;
    
 }
 
 #ingreso{
-margin: 20px;
-margin-top: 5px;
-}
-
-.btn_again{
-    margin: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: #e99c0c ;
-    height: 40px;
-}
-
-.btn_SegSocial {
-    margin: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: #e99c0c ;
-    height: 40px;
-}
-
-.caja-result{
-    display: flex;
-    justify-content: center;
-    height: 60px;
-    width: 340px;
-    background-color: beige;
-    position: relative;
-    bottom: -50px;
-
+border-radius: 10px;
+height: 30px;
+width: 315px;
+margin-left: 10px;
 }
 
 #resultado {
     color:#000000;
     font-size: 17px;
+}
+
+
+.resultados {
+    display: flex;
+    border: 1px solid;
+    height: 35px;
+    width: 315px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.resultados p{
+    height: 30px;
+    width: 153px;
+    padding-left: 15px;
+    padding-top: 8px;
+}
+
+.btn {
+    background-color: var(--color-btn);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+#btn_SegSocial{
+    margin-left: 65%;
+}
+
+#btn_again{
+    margin-left: 34%;
+}
+
+.arl-options{
+    align-self: center;
+}
+
+.contenidos .ibc{
+    background: var(--color-principal);
+    color: var(--color-fondo-vacio);
+    font-weight: bold;
+}
+
+.contenidos .total{
+    background-color: #490D4E;
+    color: var(--color-fondo-vacio);
+    font-weight: bold;
+}
+
+/*INTRO (index)*/
+.main{
+    display: flex;
+    flex-direction: column;
+    background: var(--color-principal);
+    height: 915px;
+    width: 412px;
+    border-radius: 20px;
+}
+
+#logo-blanco{
+    height: 342px;
+    width: 385px;
+    position: absolute;
+    left: 12px;
+    top: 250px;
+}
+
+/*REGISTRO/INICIO SESION*/
+.botones{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.botones a{
+text-decoration: none;
+color: #000000;
+}
+
+.btnes {
+    background-color: var(--color-btn);
+    width: 280px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+#logo-blanco-ri{
+    height: 342px;
+    width: 385px;
+    position: relative;
+    left: 15px;
+}
+
+.main-registro-inicio{
+    background-color: var(--color-principal);
+    height: 915px;
+    width: 412px;
+    border-radius: 20px;
+}
+
+.caja-main{
+    height: 600px;
+    position: relative;
+    top: 18%;
+}
+
+/*REGISTRO*/
+
+.header{
+    display: flex;
+    background-color: var(--color-principal);
+    height: 338px;
+    width: 380px;
+    border-radius:20px 20px 0 0;
+    z-index: 1;
+    opacity: 0.8;
+}
+.header img{
+    width: 92px;
+    height: 76px;
+    position: relative;
+    left: 25%;
+    top: 20px;
+}
+
+.caja-principal{
+    display: flex;
+    flex-direction: column;
+    height: 461px;
+    width: 340px;
+    background-color: var(--color-fondo);
+    border-radius: 20px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fondo{
+    background-color: var(--color-fondo-vacio);
+    border-radius: 0 0 20px 20px;
+    width: 380px;
+    height: 481px;
+    z-index: 1;
+
+}
+
+.organizador{
+    height: 300px;
+    width: 260px;
+    position: absolute;
+    top: 85px;
+    left: 40px;
+}
+
+.organizador input{
+    display: block;
+    width: 250px;
+    height: 35px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: var(--color-fondo-vacio);
+}
+.organizador button{
+    background-color: var(--color-principal);
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+    color: #ffff;
+    font-size: 15px;
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+}
+.organizador label{
+    font-size: 18px;
+}
+
+.organizador a{
+    margin: 60px;
+}
+
+.titulo{
+    color: #ffff;
+    width: 50%;
+    height: 50px;
+    position: relative;
+    top: 150px;
+    left: 52px;
+    font-size: 25px;
 }
